@@ -172,7 +172,7 @@ void setup() {
   for (size_t index = 0; index < FFT_SIZE; ++index) {
     windowValues[index] = 0.5f * (1.0f - cosf(2.0f * PI * index / (FFT_SIZE - 1)));
   }
-
+ 
   setupI2SMic();
 
   Serial.println();
